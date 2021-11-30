@@ -1,0 +1,47 @@
+[
+    {
+        "prompt": "The answer is 31",
+        "answers": [
+            31,
+            33,
+            35,
+            37
+        ]
+    },
+    {
+        "prompt": "The answer is 55",
+        "answers": [
+            55,
+            10,
+            26,
+            40
+        ]
+    },
+    {
+        "prompt": "The answer is 1",
+        "answers":[
+            1,
+            2,
+            3,
+            4
+        ]
+    },
+    {
+        "prompt": "The answer is 5",
+        "answers":[
+            5,
+            6,
+            7,
+            9
+        ]
+    },
+    {
+        "prompt": "The answer is 10",
+        "answers":[
+            10,
+            9,
+            4,
+            20
+        ]
+    }
+]
