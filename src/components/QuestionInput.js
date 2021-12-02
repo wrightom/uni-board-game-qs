@@ -1,19 +1,23 @@
 import React from 'react'
 
 function QuestionInput(props) {
-    
 
+
+    const background_colours = ["#F7B724", "#6239DF", "#4BA6FF", "#CD4794"]
     return (
-        <div>
-            <h1>{props.prompt}</h1>
-            <ol>
+        <>
+            <div className="question-container">
+                <h1 className="no-margin">{props.prompt}</h1>
+            </div>
+
+            <div className="answer-container">
                 {
                     props.answers.map((a,i)=>
-                        <li key={i}><button onClick={()=>props.onAnswer(i)}>{a}</button></li>
+                        <button className="clickable-btn answer-btn" onClick={()=>props.onAnswer(i)} style={{backgroundColor:background_colours[i]}}key={i}>{a}</button>
                     )
                 }
-            </ol>
-        </div>
+            </div>
+        </>
     )
 }
 

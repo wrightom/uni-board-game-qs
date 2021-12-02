@@ -19,6 +19,7 @@ function App() {
   const [correctAnswerIndex, setCorrectAnswerIndex] = useState(0);
   const [shuffledAs, setShuffledAs] = useState([]);
   
+  const [inputAnswer, setInputAnswer] = useState(0);
 
   function randomIndexExcept(arrayLength, excludeIndex){
     let sample = Math.floor(Math.random() * (arrayLength-1));
@@ -67,7 +68,9 @@ function App() {
   }
 
   function selectAnswer(chosenAnswerIndex){
+    setInputAnswer(chosenAnswerIndex);
     setCurrentSlide(2);
+
   }
 
   function resetQuestion(){
@@ -84,7 +87,7 @@ function App() {
           ? <HomePage onContinue={generateQuestion}/>
           : currentSlide === 1
           ? <QuestionInput prompt={questions[currentQuestion].prompt} answers={shuffledAs} onAnswer={selectAnswer}/>
-          : <QuestionAnswer answers={shuffledAs} correctI={correctAnswerIndex} onContinue={resetQuestion}/>
+          : <QuestionAnswer prompt={questions[currentQuestion].prompt} answers={shuffledAs} correctI={correctAnswerIndex} inputI={inputAnswer} onContinue={resetQuestion}/>
         }
     </div>
   );
