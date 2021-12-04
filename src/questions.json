@@ -189,10 +189,10 @@
         ]
     },
     {
-        "prompt":"What is $\\cos{pi}?$",
+        "prompt":"What is $\\cos{\\pi}?$",
         "answers": [
-            "1",
             "-1",
+            "1",
             "0",
             "$\\pi$"
         ]
