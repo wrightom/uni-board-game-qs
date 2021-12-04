@@ -153,7 +153,7 @@
         ]
     },
     {
-        "prompt":"What's the coefficient of $x^3y^3$ in $(x+y)^3$?",
+        "prompt":"What's the coefficient of $x^3y^3$ in $(x+y)^6$?",
         "answers": [
             "20",
             "10",
